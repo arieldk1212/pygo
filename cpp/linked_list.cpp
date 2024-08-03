@@ -8,11 +8,12 @@ public:
   Node(short int d, short int n);
   ~Node();
 };
+
 Node::Node(short int d, short int n) {
   data = d;
   next = n;
 };
-Node:: ~Node() { std::cout << "Node Deleted"; };
+Node:: ~Node() {};
 
 class LinkedList {
 private:
@@ -24,11 +25,7 @@ public:
   //methods for linked list operations
   void insert_at_beginning(int data);
   void insert_at_end(int data);
-  void insert_values()
+  void insert_values(int arr[]);
   void display_list();
 
 };
-
-int main() {
-  return 0;
-}
